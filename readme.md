@@ -3,7 +3,7 @@ Parse Holy land (Israel/Palestine) phone numbers
 
 
 ## usage
-```ecmascript 6
+```js
 // via new instance
 var number = new ParseHolyLandPhone('025121234');
 
