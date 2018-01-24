@@ -2,7 +2,7 @@
  * @author Mordi Sacks
  * @class ParseHolyLandPhone
  */
-export class ParseHolyLandPhone {
+export default class ParseHolyLandPhone {
 
     constructor(phoneNumber) {
         this.phoneNumber = phoneNumber;

@@ -1,0 +1,19 @@
+{
+  "name": "parseholylandphone",
+  "version": "1.0.0",
+  "description": "Parse Holy land (Israel/Palestine) phone numbers",
+  "main": "src/ParseHolyLandPhone.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MordiSacks/ParseHolyLandPhoneJS.git"
+  },
+  "author": "Mordi Sacks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MordiSacks/ParseHolyLandPhoneJS/issues"
+  },
+  "homepage": "https://github.com/MordiSacks/ParseHolyLandPhoneJS#readme"
+}
