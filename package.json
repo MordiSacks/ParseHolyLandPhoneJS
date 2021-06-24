@@ -1,6 +1,5 @@
 {
   "name": "parseholylandphone",
-  "version": "1.0.0",
   "description": "Parse Holy land (Israel/Palestine) phone numbers",
   "main": "src/ParseHolyLandPhone.js",
   "scripts": {

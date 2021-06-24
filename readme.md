@@ -1,9 +1,12 @@
 # ParseHolyLandPhone
 Parse Holy land (Israel/Palestine) phone numbers
 
-
 ## usage
+`npm i parseholylandphone`
+
 ```js
+import ParseHolyLandPhone from 'parseholylandphone';
+
 // via new instance
 var number = new ParseHolyLandPhone('025121234');
 
@@ -25,6 +28,7 @@ number.isValid();
 * `isPremium` Checks if phone number is Premium (1900, etc).
 * `isKosher` Checks if phone number is Kosher (phone supports only calls).
 * `isErotic` Checks if phone number is Erotic (1919).
+* `isSmsable` Checks if phone number can receive an sms (text) .  
 * `getInternational` Returns phone number transformed to international format 025231234  > 97225231234.
 * `getPhoneNumber` Returns the parsed phone number.
 ### all `is` functions have a reverse function `isNot`.

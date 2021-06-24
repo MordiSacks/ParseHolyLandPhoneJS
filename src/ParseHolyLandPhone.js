@@ -113,6 +113,15 @@ export default class ParseHolyLandPhone {
         return this.phoneNumber.match(/^1919\d{6}$/) !== null;
     }
 
+    /**
+     * Checks if phone number can receive sms
+     *
+     * @return boolean
+     */
+    isSmsable() {
+        return this.isNotKosher() && this.isMobile();
+    }
+
     fromInternational() {
         this.phoneNumber = this.phoneNumber.replace(/^(972)(\d{8,9})$/, '0$2');
     }
@@ -126,43 +135,47 @@ export default class ParseHolyLandPhone {
         return this.phoneNumber.replace(/^(0)(\d{8,9})$/, '972$2');
     }
 
-    isNotValid(){
+    isNotValid() {
         return !this.isValid();
     }
 
-    isNotIsraeli(){
+    isNotIsraeli() {
         return !this.isIsraeli();
     }
 
-    isNotPalestinian(){
+    isNotPalestinian() {
         return !this.isPalestinian();
     }
 
-    isNotLandLine(){
+    isNotLandLine() {
         return !this.isLandLine();
     }
 
-    isNotMobile(){
+    isNotMobile() {
         return !this.isMobile();
     }
 
-    isNotBusiness(){
+    isNotBusiness() {
         return !this.isBusiness();
     }
 
-    isNotTollFree(){
+    isNotTollFree() {
         return !this.isTollFree();
     }
 
-    isNotPremium(){
+    isNotPremium() {
         return !this.isPremium();
     }
 
-    isNotKosher(){
+    isNotKosher() {
         return !this.isKosher();
     }
 
-    isNotErotic(){
+    isNotErotic() {
         return !this.isErotic();
+    }
+
+    isNotSmsable() {
+        return !this.isSmsable();
     }
 }
